@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 41">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient);
+      }
+
+      .st1 {
+        fill: #fafafa;
+      }
+
+      .st1, .st2, .st3 {
+        fill-rule: evenodd;
+      }
+
+      .st2 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st3 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st4 {
+        fill: #0c0c4f;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="42.9" y1="35.7" x2="-2.9" y2="7.3" gradientTransform="translate(0 42) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec796b"/>
+      <stop offset="1" stop-color="#e175b1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="22.9" y1="33.4" x2="13.6" y2="6.1" gradientTransform="translate(0 42) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec796b"/>
+      <stop offset="1" stop-color="#e175b1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient2" x1="32.8" y1="14.5" x2="27.5" y2="11.2" gradientTransform="translate(0 42) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec796b"/>
+      <stop offset="1" stop-color="#e175b1"/>
+    </linearGradient>
+  </defs>
+  <path class="st4" d="M.6,20.5c0,10.7,8.7,19.4,19.4,19.4s19.4-8.7,19.4-19.4S30.7,1.1,20,1.1.6,9.8.6,20.5Z"/>
+  <path class="st0" d="M20,40.5C9,40.5,0,31.5,0,20.5S9,.5,20,.5s20,9,20,20-9,20-20,20ZM20,1.6C9.6,1.6,1.1,10.1,1.1,20.5s8.5,18.9,18.9,18.9,18.9-8.5,18.9-18.9S30.4,1.6,20,1.6Z"/>
+  <path class="st1" d="M11.2,15.8l.5-1.5c.1-.3.3-.6.7-.6l1.5-.5c.2,0,.2-.4,0-.4l-1.5-.5c-.3-.1-.6-.3-.6-.7l-.5-1.5c0-.2-.4-.2-.4,0l-.5,1.5c0,.3-.3.5-.7.6l-1.5.5c-.2,0-.2.4,0,.4l1.5.5c.3.1.5.3.6.7l.5,1.5c0,.2.4.2.4,0Z"/>
+  <path class="st2" d="M35.4,14.9c-.6-.7-1.6-1.1-2.6-1.3-1-.2-2-.1-2.9,0-1.9.3-3.7,1.1-5.2,2.1-.8.5-1.5,1-2.2,1.6-.3.3-.6.6-1,.9l-.9.9c-1,1-1.9,1.9-2.8,2.7-.9.7-1.8,1.3-2.6,1.7-.8.4-1.7.6-2.9.7-1.2,0-2.5-.2-4-.5-1.5-.3-3-.8-4.8-1.3.6,1.7,1.5,3.2,2.7,4.5,1.2,1.3,2.7,2.5,4.6,3.3,1.9.8,4.2,1.1,6.4.7,2.2-.4,4.1-1.4,5.7-2.6,1.6-1.2,2.8-2.5,3.9-4,.3-.4.5-.6.7-.9l.6-.9c.4-.5.8-1.2,1.2-1.7.8-1.1,1.6-2.2,2.5-3.3.5-.5.9-1,1.5-1.5.3-.2.6-.5.9-.7.3-.2.7-.4,1.2-.5h0s0,0,0,0Z"/>
+  <path class="st1" d="M35.4,14.9c-.7-1.7-1.9-3.2-3.6-4.2-1.7-1.1-4-1.6-6.3-1.1-1.1.2-2.3.6-3.2,1.2-1,.6-1.8,1.2-2.6,2-.4.4-.7.7-1.1,1.1l-.9,1.1-1.4,1.8c-1.7,2.3-3.6,5-6.6,5.8-3,.8-4.3,0-6.1-.2.3.9.7,1.7,1.3,2.4.5.8,1.2,1.5,2,2.1.4.3.8.6,1.3.8.5.2,1,.4,1.5.6,1.1.3,2.3.4,3.5.2,1.2-.2,2.3-.5,3.3-1,1-.5,1.9-1.1,2.7-1.7,1.5-1.3,2.8-2.7,3.8-4.1.5-.7,1-1.5,1.4-2.2l.5-.9c.2-.3.3-.5.5-.7.6-1,1.3-1.7,2-2.3.8-.6,1.8-1,3.2-1.1,1.4-.1,3,0,4.8.5h0s0,0,0,0Z"/>
+  <path class="st3" d="M27.9,29.1c0,1.3,1,2.3,2.3,2.3s2.3-1,2.3-2.3-1-2.3-2.3-2.3-2.3,1-2.3,2.3Z"/>
+</svg>
