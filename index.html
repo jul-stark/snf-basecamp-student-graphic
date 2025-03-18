@@ -69,13 +69,32 @@
             color: white;
         }
 
+        /* Big Heading */
+        #heading {
+            font-size: 32px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        /* Description Text */
+        #description {
+            max-width: 600px;
+            font-size: 20px;
+            font-weight: 200;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
         /* Form Container */
         #form-container {
             display: flex;
             flex-direction: column;
             align-items: flex-start; /* Align items to the left */
-            gap: 4px; /* Reduced form gap */
-            
+            gap: 4px;
         }
 
         /* Input Fields */
@@ -84,7 +103,7 @@
             background: rgba(255, 255, 255, 0.05);
             color: white;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 24px; /* Increased padding */
+            padding: 24px;
             width: 360px;
             font-size: 15px;
             outline: none;
@@ -98,29 +117,6 @@
 
         input:focus {
             border-color: #2E64D7;
-        }
-
-        /* Radio Buttons (Now Vertical & Aligned Left) */
-        .radio-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align left */
-            margin-top: 4px;
-            margin-bottom: 32px;
-            gap: 8px;
-        }
-
-        .radio-container label {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .radio-container input[type="radio"] {
-            accent-color: #2E64D7;
-            transform: scale(1.2);
         }
 
         /* Buttons */
@@ -177,23 +173,24 @@
         <div id="header-content">
             <img src="snf-logo.svg" alt="SNF Logo">
             <div id="divider"></div>
-            <div id="header-title">BASECAMP CARD GENERATOR</div>
+            <div id="header-title">BASECAMP CARD GENERATOR | STUDENT</div>
         </div>
+    </div>
+
+    <!-- Big Heading -->
+    <div id="heading" style="margin-bottom: 16px;">
+        Congratulations for being accepted to Basecamp 12!
+    </div>
+
+    <!-- Description -->
+    <div id="description" style="margin-bottom: 40px;">
+        Generate your own attendance image and let everyone know you’re joining. 
+        Personalize it and share it on social media to celebrate the journey 🚀
     </div>
 
     <div id="form-container">
         <input type="file" id="imageUpload" accept="image/*"><br>
         <input type="text" id="nameInput" placeholder="Enter your name"><br>
-
-        <div class="radio-container">
-            <label>
-                <input type="radio" name="role" value="student"> I'm a student
-            </label>
-            <label>
-                <input type="radio" name="role" value="teacher"> I'm a teacher
-            </label>
-        </div>
-
         <button onclick="generateImage()">Generate image</button>
     </div>
 

@@ -3,22 +3,22 @@ function generateImage() {
     const ctx = canvas.getContext("2d");
     const imageUpload = document.getElementById("imageUpload").files[0];
     const nameInput = document.getElementById("nameInput").value.trim();
-    const role = document.querySelector('input[name="role"]:checked');
 
-    if (!imageUpload || !nameInput || !role) {
-        alert("Please upload an image, enter your name, and select your role.");
+    if (!imageUpload || !nameInput) {
+        alert("Please upload an image and enter your name.");
         return;
     }
 
-    // Get selected role value
-    const roleValue = role.value;
+    // Hide heading and description
+    document.getElementById("heading").style.display = "none";
+    document.getElementById("description").style.display = "none";
 
     // Hide form fields and "Generate Image" button
     document.getElementById("form-container").style.display = "none";
 
-    // Choose the correct template based on role
+    // Always use the student template
     const template = new Image();
-    template.src = roleValue === "student" ? "student-template.png" : "teacher-template.png";
+    template.src = "student-template.png";
 
     const img = new Image();
     const reader = new FileReader();
@@ -32,10 +32,9 @@ function generateImage() {
             canvas.width = template.width;
             canvas.height = template.height;
 
-            // Draw the template background
             ctx.drawImage(template, 0, 0, canvas.width, canvas.height);
 
-            // Position & Size of Profile Photo
+            // Profile Photo Position & Size
             const photoX = 819, photoY = 890, photoWidth = 520, photoHeight = 520;
             const radius = photoWidth / 2;
 
@@ -58,7 +57,7 @@ function generateImage() {
             document.getElementById("preview").style.display = "block";
 
             document.getElementById("downloadLink").href = dataURL;
-            document.getElementById("downloadLink").download = `basecamp-${nameInput.replace(/\s+/g, '_')}-${roleValue}.png`;
+            document.getElementById("downloadLink").download = `basecamp-${nameInput.replace(/\s+/g, '_')}.png`;
             document.getElementById("downloadLink").style.display = "inline-block";
             document.getElementById("resetButton").style.display = "inline-block";
         };
