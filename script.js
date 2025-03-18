@@ -38,13 +38,24 @@ function generateImage() {
             const photoX = 819, photoY = 890, photoWidth = 520, photoHeight = 520;
             const radius = photoWidth / 2;
 
+            // Crop to square to ensure image fills without distortion
+            let srcX = 0, srcY = 0, srcSize = 0;
+            if (img.width > img.height) {
+                srcSize = img.height;
+                srcX = (img.width - img.height) / 2;
+            } else {
+                srcSize = img.width;
+                srcY = (img.height - img.width) / 2;
+            }
+
             ctx.save();
             ctx.beginPath();
             ctx.arc(photoX + radius, photoY + radius, radius, 0, Math.PI * 2);
             ctx.closePath();
             ctx.clip();
 
-            ctx.drawImage(img, photoX, photoY, photoWidth, photoHeight);
+            // Draw cropped image so it fills the circle
+            ctx.drawImage(img, srcX, srcY, srcSize, srcSize, photoX, photoY, photoWidth, photoHeight);
             ctx.restore();
 
             ctx.fillStyle = "white";
@@ -67,5 +78,18 @@ function generateImage() {
 }
 
 function resetPage() {
-    window.location.reload();
+    document.getElementById("heading").style.display = "block";
+    document.getElementById("description").style.display = "block";
+    document.getElementById("form-container").style.display = "block";
+
+    document.getElementById("preview").style.display = "none";
+    document.getElementById("downloadLink").style.display = "none";
+    document.getElementById("resetButton").style.display = "none";
+
+    document.getElementById("imageUpload").value = "";
+    document.getElementById("nameInput").value = "";
+
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
